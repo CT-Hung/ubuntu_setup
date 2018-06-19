@@ -90,7 +90,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-alias cll='clear; ls'
+alias cll='clear; ls;'
 alias mybuild='cd ~/moos-ivp-cthung; ./build.sh; cd -'
 
 # Add an "alert" alias for long running commands.  Use like so:
