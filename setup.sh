@@ -1,5 +1,7 @@
 #!/bin/bash 
 
+#install alsa lib 
+sudo apt-get install libasound2-dev
 #install tmux 
 sudo apt-get install tmux
 #install fisa_vim
