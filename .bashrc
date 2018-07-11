@@ -193,10 +193,10 @@ export PATH
 
 source /opt/ros/kinetic/setup.bash
 # added by Anaconda3 installer
-#alias python='/home/cthung/anaconda3/bin/python3'
-#alias conda='/home/cthung/anaconda3/bin/conda'
-export PATH="/home/cthung/anaconda3/bin:$PATH"
+alias python='~/anaconda3/bin/python3'
+alias conda='~/anaconda3/bin/conda'
+#xport PATH="/home/cthung/anaconda3/bin:$PATH"
 
 # added matlab
-export PATH="/home/cthung/matlab/bin":$PATH
+export PATH="~/matlab/bin":$PATH
 export DUCKIEFLEET_ROOT="$HOME"/RobotX/duckiefleet/
