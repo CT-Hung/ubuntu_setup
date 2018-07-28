@@ -166,12 +166,12 @@ function cd {
 	builtin cd "$@" && ls -F
 }
 # opencv library path
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 # cuda path
-export PATH="$PATH:/usr/local/cuda-8.0/"
-PATH="$PATH:/usr/local/cuda-8.0/bin"
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/lib64/stubs"
-export TERM=screen-256color
+#export PATH="$PATH:/usr/local/cuda-8.0/"
+#PATH="$PATH:/usr/local/cuda-8.0/bin"
+#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/lib64/stubs"
+#export TERM=screen-256color
 
 # auto launch tmux when new bash being created
 case $- in *i*)
@@ -191,11 +191,11 @@ PATH=$PATH:~/moos-ivp/robotx-mit2014-mike/bin
 PATH=$PATH:~/moos-ivp-cthung/bin
 export PATH
 
-source /opt/ros/kinetic/setup.bash
+#source /opt/ros/kinetic/setup.bash
 # added by Anaconda3 installer
 alias python='~/anaconda3/bin/python3'
 alias conda='~/anaconda3/bin/conda'
-#xport PATH="/home/cthung/anaconda3/bin:$PATH"
+#export PATH="/home/cthung/anaconda3/bin:$PATH"
 
 # added matlab
 export PATH="~/matlab/bin":$PATH
