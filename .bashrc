@@ -190,7 +190,7 @@ export PATH
 #export DUCKIEFLEET_ROOT="$HOME"/RobotX/duckiefleet/
 
 # ntu vrx 
-source ~/ntu_vrx/vrx_ws/devel/setup.bash
-source ~/ntu_vrx/catkin_ws/devel/setup.bash
+source ~/ntu_vrx/catkin_ws/devel/setup.bash 
+source ~/ntu_vrx/vrx_ws/devel/setup.bash --extend
 PATH=$PATH:~/ntu_vrx/moos-ivp-ntuvrx/bin
 export PATH
