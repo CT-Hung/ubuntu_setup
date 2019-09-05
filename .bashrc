@@ -92,6 +92,7 @@ alias la='ls -A'
 alias l='ls -CF'
 alias cll='clear; ls;'
 alias mybuild='cd ~/moos-ivp-cthung; ./build.sh; cd -'
+alias python='python3'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -166,24 +167,12 @@ function cd {
 	builtin cd "$@" && ls -F
 }
 # opencv library path
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-# cuda path
-#export PATH="$PATH:/usr/local/cuda-8.0/"
-#PATH="$PATH:/usr/local/cuda-8.0/bin"
-#export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64:/usr/local/cuda-8.0/lib64/stubs"
-#export TERM=screen-256color
-
 # auto launch tmux when new bash being created
 case $- in *i*)
 	[ -z "$TMUX" ] && exec tmux 
 
 esac
-#PYTHONPATH
-#export PYTHONPATH="${PYTHONPATH}:/usr/local/lib/python2.7/site-packages:/home/chunyo/pyvision/src"
-#export PYTHONPATH="${PYTHONPATH}:/usr/local/lib/python2.7/dist-packages"
 
-# added by Anaconda2 4.2.0 installer
-# export PATH="/home/chunyo/anaconda2/bin:$PATH"
 unset GNOME_KEYRING_CONTROL
 
 PATH=$PATH:~/moos-ivp/bin
@@ -191,12 +180,17 @@ PATH=$PATH:~/moos-ivp/robotx-mit2014-mike/bin
 PATH=$PATH:~/moos-ivp-cthung/bin
 export PATH
 
-#source /opt/ros/kinetic/setup.bash
 # added by Anaconda3 installer
-alias python='~/anaconda3/bin/python3'
-alias conda='~/anaconda3/bin/conda'
+#alias python='~/anaconda3/bin/python3'
+#alias conda='~/anaconda3/bin/conda'
 #export PATH="/home/cthung/anaconda3/bin:$PATH"
 
 # added matlab
-export PATH="~/matlab/bin":$PATH
-export DUCKIEFLEET_ROOT="$HOME"/RobotX/duckiefleet/
+#export PATH="~/matlab/bin":$PATH
+#export DUCKIEFLEET_ROOT="$HOME"/RobotX/duckiefleet/
+
+# ntu vrx 
+source ~/ntu_vrx/vrx_ws/devel/setup.bash
+source ~/ntu_vrx/catkin_ws/devel/setup.bash
+PATH=$PATH:~/ntu_vrx/moos-ivp-ntuvrx/bin
+export PATH
