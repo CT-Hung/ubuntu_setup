@@ -16,6 +16,10 @@ sudo apt --assume-yes install cmake mercurial git ruby libeigen3-dev ${GAZ} lib$
 
 #Install ntu_vrx dependenceies
 sudo apt-get --assume-yes install librapidxml-dev
+sudo add-apt-repository --yes ppa:v-launchpad-jochen-sprickerhof-de/pcl
+sudo apt-get --assume-yes update
+sudo apt-get --assume-yes install libpcl-dev
+sudo apt install --assume-yes ros-melodic-pcl-ros
 
 #clone ntu_vrx
 cd ~/ 
